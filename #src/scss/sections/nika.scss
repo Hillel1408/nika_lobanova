@@ -1,0 +1,29 @@
+.nika {
+    &__content {
+        padding: 120px 20px 120px 20px;
+        margin-left: 90px;
+        margin-right: 89px;
+        border-left: 1px solid #000000;
+        border-right: 1px solid #000000;
+        @media (max-width: ($md3 + px)) {
+            margin: 0;
+            border: none;
+        }
+    }
+    &__images {
+        display: flex;
+        gap: 20 / 874 * 100%;
+        max-width: 874px;
+        margin: 0 auto;
+        img {
+            width: 427 / 874 * 100%;
+            @media (max-width: ($md4 + px)) {
+                width: 100%;
+            }
+        }
+        @media (max-width: ($md4 + px)) {
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+}

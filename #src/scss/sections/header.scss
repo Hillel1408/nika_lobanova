@@ -18,6 +18,7 @@
     &__list {
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
         &-link {
             font-weight: 500;
             font-size: 14px;
@@ -26,13 +27,17 @@
             font-family: 'Montserrat', sans-serif;
             padding: 10px 32px;
             color: #26211e;
+            white-space: nowrap;
             &.active {
                 color: #530709;
+            }
+            @media (max-width: ($md3 + px)) {
+                padding: 6px 12px;
             }
         }
     }
     &__language {
-        width: 90px;
+        min-width: 90px;
         border-left: 1px solid #000000;
         display: flex;
         align-items: center;

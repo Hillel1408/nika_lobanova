@@ -1,0 +1,38 @@
+.about {
+    background-color: #e3dedb;
+    &__content {
+        padding: 120px 20px 167px 20px;
+        margin: 0 89px 0 90px;
+        border-left: 1px solid #000000;
+        border-right: 1px solid #000000;
+        &-wrap {
+            max-width: 696px;
+            margin: 0 auto;
+        }
+        @media (max-width: ($md3 + px)) {
+            margin: 0;
+            border: none;
+        }
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 42 / 30 * 100%;
+        color: #530709;
+        margin-bottom: 24px;
+        @media (max-width: ($md3 + px)) {
+            font-size: 24px;
+        }
+    }
+    &__text {
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 42 / 28 * 100%;
+        &:not(:last-child) {
+            margin-bottom: 24px;
+        }
+        @media (max-width: ($md3 + px)) {
+            font-size: 22px;
+        }
+    }
+}

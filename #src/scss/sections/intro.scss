@@ -3,17 +3,20 @@
     background-size: cover;
     background-position: center;
     &__content {
-        padding-top: 400px;
-        padding-bottom: 315px;
+        padding: 400px 20px 315px 20px;
         margin-left: 90px;
         margin-right: 89px;
         border-left: 1px solid #000000;
         border-right: 1px solid #000000;
         position: relative;
+        @media (max-width: ($md3 + px)) {
+            margin: 0;
+            border: none;
+        }
     }
     &__title {
         font-size: 84px;
-        line-height: 126px;
+        line-height: 126 / 84 * 100%;
         color: white;
         text-align: center;
         margin-bottom: 49px;
@@ -28,13 +31,25 @@
             background-color: white;
             position: absolute;
             bottom: 0;
+            @media (max-width: ($md3 + px)) {
+                width: 250px;
+            }
+        }
+        @media (max-width: ($md3 + px)) {
+            font-size: 54px;
+        }
+        @media (max-width: ($md4 + px)) {
+            font-size: 34px;
         }
     }
     &__subtitle {
         font-size: 34px;
-        line-height: 41px;
+        line-height: 41 / 34 * 100%;
         color: white;
         text-align: center;
+        @media (max-width: ($md3 + px)) {
+            font-size: 28px;
+        }
     }
     &__socials {
         display: flex;

@@ -1,0 +1,110 @@
+.stylist {
+    background-color: #e3dedb;
+    &__content {
+        padding: 120px 20px 90px 20px;
+        margin-left: 90px;
+        margin-right: 89px;
+        border-left: 1px solid #000000;
+        border-right: 1px solid #000000;
+        &-wrap {
+            max-width: 879px;
+            margin: 0 auto;
+        }
+        @media (max-width: ($md3 + px)) {
+            margin: 0;
+            border: none;
+        }
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 80 / 48 * 100%;
+        color: #530709;
+        margin-bottom: 24px;
+        text-transform: uppercase;
+        @media (max-width: ($md3 + px)) {
+            font-size: 32px;
+        }
+        @media (max-width: ($md4 + px)) {
+            font-size: 26px;
+        }
+    }
+    &__subtitle {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 36 / 24 * 100%;
+        color: #26211e;
+        text-transform: uppercase;
+        margin-bottom: 71px;
+        &-2 {
+            color: #530709;
+            margin-bottom: 24px;
+        }
+        @media (max-width: ($md4 + px)) {
+            font-size: 20px;
+        }
+    }
+    &__list {
+        padding-left: 27px;
+        display: flex;
+        flex-direction: column;
+        gap: 56px;
+        margin-bottom: 114px;
+        &-item {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 36 / 24 * 100%;
+            color: #26211e;
+            position: relative;
+            @media (max-width: ($md4 + px)) {
+                font-size: 20px;
+            }
+            span {
+                display: block;
+                margin-top: 24px;
+                font-size: 20px;
+                line-height: 30px;
+                color: #000000;
+                font-weight: 400;
+            }
+            b {
+                position: relative;
+                z-index: 2;
+            }
+            &:before {
+                content: '';
+                display: block;
+                position: absolute;
+                width: 43px;
+                height: 38px;
+                background-color: #f7f6f4;
+                z-index: 1;
+                left: -17px;
+                top: -2px;
+            }
+            &:after {
+                content: '';
+                display: block;
+                position: absolute;
+                width: 43px;
+                height: 38px;
+                background-color: #530709;
+                z-index: 0;
+                left: -27px;
+                top: -12px;
+            }
+        }
+    }
+    &__text {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 36 / 24 * 100%;
+        color: #26211e;
+        &:not(:last-child) {
+            margin-bottom: 24px;
+        }
+        @media (max-width: ($md4 + px)) {
+            font-size: 20px;
+        }
+    }
+}
