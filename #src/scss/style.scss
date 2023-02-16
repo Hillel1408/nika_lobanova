@@ -2,15 +2,15 @@
 @import 'icons';
 
 $minWidth: 320;
-$maxWidth: 1512;
-$maxWidthContainer: 1142;
+$maxWidth: 1440;
+$maxWidthContainer: 1320;
 $md1: $maxWidthContainer + 30;
 $md2: 991.98;
 $md3: 767.98;
 $md4: 575.98;
 $md5: 419.98;
 
-$fontFamily: 'Open Sans', sans-serif;
+$fontFamily: 'Geometria', sans-serif;
 
 @import 'null';
 
@@ -24,12 +24,14 @@ $fontFamily: 'Open Sans', sans-serif;
 .container {
     max-width: $maxWidthContainer + px;
     margin: 0 auto;
+    border-left: 1px solid #000000;
+    border-right: 1px solid #000000;
     @media (max-width: ($md1 + px)) {
         max-width: none;
-        padding: 0 15px;
+        margin: 0 15px;
     }
 }
 
 @import './sections/header';
-@import './sections/main';
+@import './sections/intro';
 @import './sections/footer';

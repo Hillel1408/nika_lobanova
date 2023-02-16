@@ -1,0 +1,55 @@
+.intro {
+    background-image: url('../img/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    &__content {
+        padding-top: 400px;
+        padding-bottom: 315px;
+        margin-left: 90px;
+        margin-right: 89px;
+        border-left: 1px solid #000000;
+        border-right: 1px solid #000000;
+        position: relative;
+    }
+    &__title {
+        font-size: 84px;
+        line-height: 126px;
+        color: white;
+        text-align: center;
+        margin-bottom: 49px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        &:before {
+            content: '';
+            display: block;
+            height: 1px;
+            width: 400px;
+            background-color: white;
+            position: absolute;
+            bottom: 0;
+        }
+    }
+    &__subtitle {
+        font-size: 34px;
+        line-height: 41px;
+        color: white;
+        text-align: center;
+    }
+    &__socials {
+        display: flex;
+        flex-direction: column;
+        gap: 65px;
+        position: absolute;
+        bottom: 65px;
+        right: -60px;
+        li {
+            a {
+                &:before {
+                    color: white;
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}
