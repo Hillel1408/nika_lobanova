@@ -36,10 +36,16 @@ body {
     }
 }
 
+body.lock {
+    overflow: hidden;
+}
+
 @import './sections/header';
 @import './sections/intro';
 @import './sections/about';
 @import './sections/nika';
 @import './sections/stylist';
+@import './sections/slider';
 @import './sections/order';
+@import './sections/popup';
 @import './sections/footer';

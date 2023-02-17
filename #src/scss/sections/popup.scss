@@ -1,0 +1,176 @@
+.popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: all 0.8s ease 0s;
+    z-index: 100;
+    cursor: default;
+    &.open {
+        opacity: 1;
+        visibility: visible;
+    }
+    &.open &__content {
+        transform: perspective(600px) translate(0px, 0%) rotateX(0deg);
+        opacity: 1;
+    }
+    &__body {
+        min-height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 30px 10px;
+        transition: all 0.8s ease 0s;
+    }
+    &__content {
+        transition: all 0.8s ease 0s;
+        opacity: 0;
+        transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
+        padding: 135px 115px 80px 115px;
+        background-color: white;
+        @media (max-width: ($md3 + px)) {
+            padding: 135px 40px 80px 40px;
+        }
+        &-title {
+            font-weight: 700;
+            font-size: 34px;
+            line-height: 48 / 34 * 100%;
+            text-transform: uppercase;
+            color: #26211e;
+            margin-bottom: 54px;
+            position: relative;
+            @media (max-width: ($md3 + px)) {
+                font-size: 24px;
+            }
+            @media (max-width: ($md4 + px)) {
+                font-size: 20px;
+            }
+            span {
+                position: relative;
+                z-index: 2;
+            }
+            &:before {
+                content: '';
+                display: block;
+                position: absolute;
+                width: 43px;
+                height: 38px;
+                background-color: #f7f6f4;
+                z-index: 1;
+                left: -17px;
+                top: -2px;
+            }
+            &:after {
+                content: '';
+                display: block;
+                position: absolute;
+                width: 43px;
+                height: 38px;
+                background-color: #530709;
+                z-index: 0;
+                left: -27px;
+                top: -12px;
+            }
+        }
+        &-imgWrap {
+            width: 100%;
+        }
+        &-img {
+            width: 874px;
+            position: relative;
+            img {
+                width: 100%;
+                height: 258px;
+                object-fit: cover;
+                margin-bottom: 4px;
+                @media (max-width: ($md3 + px)) {
+                    height: auto;
+                }
+            }
+            @media (max-width: (1150 + px)) {
+                width: 100%;
+            }
+            @media (max-width: ($md3 + px)) {
+                padding-bottom: 74px;
+            }
+        }
+        &-block {
+            position: absolute;
+            bottom: 4px;
+            background: #530709;
+            width: 100%;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 34 / 24 * 100%;
+            text-transform: uppercase;
+            color: #ffffff;
+            height: 74px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @media (max-width: ($md3 + px)) {
+                font-size: 20px;
+            }
+            @media (max-width: ($md4 + px)) {
+                font-size: 16px;
+            }
+        }
+        &-text {
+            width: 874px;
+            margin-top: 44px;
+            font-size: 20px;
+            line-height: 30 / 20 * 100%;
+            color: #000000;
+            font-weight: 300;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            @media (max-width: (1150 + px)) {
+                width: 100%;
+            }
+            @media (max-width: ($md4 + px)) {
+                font-size: 18px;
+            }
+        }
+    }
+    &__close {
+        position: absolute;
+        right: 23px;
+        top: 34px;
+        width: 44px;
+        height: 44px;
+        cursor: pointer;
+        transition: transform 0.3s ease 0s;
+        z-index: 1;
+        &:before,
+        &:after {
+            position: absolute;
+            content: ' ';
+            height: 44px;
+            width: 6px;
+            background-color: #530709;
+        }
+        &:before {
+            transform: rotate(45deg);
+        }
+        &:after {
+            transform: rotate(-45deg);
+        }
+        @media (max-width: ($md3 + px)) {
+            right: 0;
+            top: 14px;
+            width: 34px;
+            height: 34px;
+            &:before,
+            &:after {
+                height: 34px;
+            }
+        }
+    }
+}
