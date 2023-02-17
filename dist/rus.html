@@ -14,25 +14,31 @@
         <div class="wrapper">
             <header class="header">
     <div class="container header__container">
-        <a href="#"><img class="header__logo" src="./img/logo.svg" alt="" /></a>
+        <a href="/"><img class="header__logo" src="./img/logo.svg" alt="" /></a>
         <nav class="header__nav">
             <ul class="header__list">
                 <li class="header__list-item">
-                    <a class="header__list-link active" href="#">ОБО МНЕ</a>
+                    <a class="header__list-link" href="#about">ОБО МНЕ</a>
                 </li>
                 <li class="header__list-item">
-                    <a class="header__list-link" href="#">TЕСТ</a>
+                    <a class="header__list-link" href="#stylist">TЕСТ</a>
                 </li>
                 <li class="header__list-item">
-                    <a class="header__list-link" href="#">УСЛУГИ</a>
+                    <a class="header__list-link" href="#slider">УСЛУГИ</a>
                 </li>
                 <li class="header__list-item">
-                    <a class="header__list-link" href="#">КОНТАКТЫ</a>
+                    <a class="header__list-link" href="#order">КОНТАКТЫ</a>
                 </li>
             </ul>
         </nav>
         <div class="header__language">
-            <span class="icon-1">Ru</span>
+            <div class="icon-1">
+                Ru
+                <div class="header__tooltip">
+                    <a href="uk.html" class="header__tooltip-item">Uk</a>
+                    <a href="/" class="header__tooltip-item">En</a>
+                </div>
+            </div>
         </div>
     </div>
 </header>
@@ -61,7 +67,7 @@
     </div>
 </section>
 
-                <section class="about">
+                <section class="about" id="about">
     <div class="container">
         <div class="about__content">
             <div class="about__content-wrap">
@@ -93,7 +99,7 @@
     </div>
 </section>
 
-                <div class="stylist">
+                <div class="stylist" id="stylist">
     <div class="container">
         <div class="stylist__content">
             <div class="stylist__content-wrap">
@@ -164,7 +170,7 @@
     </div>
 </div>
 
-                <section class="slider">
+                <section class="slider" id="slider">
     <div class="container">
         <div class="slider__content">
             <h2 class="slider__title">УСЛУГИ ПЕРСОНАЛЬНОГО СТИЛИСТА</h2>
@@ -195,7 +201,7 @@
                         шопинг сопровождение online/offline
                     </h3>
                     <p class="slider__slick-text">
-                         Но услуга может идти и отдельно. Сначала проводится
+                        Но услуга может идти и отдельно. Сначала проводится
                         консультация, на которой мы вместе определяем цели и
                         задачи будущего шопинга.
                     </p>
@@ -250,11 +256,11 @@
     </div>
 </section>
 
-                <section class="order">
+                <section class="order" id="order">
     <div class="container">
         <div class="order__content">
             <div class="order__content-block">
-                <h2 class="order__content-title">зАКАЗАТЬ УСЛУГУ</h2>
+                <h2 class="order__content-title">ЗАКАЗАТЬ УСЛУГУ</h2>
                 <p class="order__content-text">
                     Для записи или уточнения детальной информации свяжись со
                     мной в Telegram с помощью кнопки ниже:
