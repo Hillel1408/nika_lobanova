@@ -13,11 +13,18 @@
     &__title {
         font-weight: 700;
         font-size: 48px;
-        line-height: 80px;
+        line-height: 80 / 48 * 100%;
         text-transform: uppercase;
         color: #530709;
         max-width: 334px;
         margin-bottom: 44px;
+        @media (max-width: ($md3 + px)) {
+            font-size: 38px;
+        }
+        @media (max-width: ($md4 + px)) {
+            font-size: 28px;
+            margin-bottom: 84px;
+        }
     }
     &__slick {
         margin-left: 100px;
@@ -32,11 +39,18 @@
                 object-fit: cover;
             }
         }
+        @media (max-width: 790px) {
+            margin-right: 127px;
+        }
         @media (max-width: ($md3 + px)) {
             margin-left: 0;
+            //margin-right: 390px;
+        }
+        @media (max-width: 580px) {
+            margin-right: 0;
         }
         &-item {
-            width: 315px !important;
+            width: 335px !important;
             background-color: white;
             padding: 0 10px 40px 10px;
             @media (any-hover: hover) {
@@ -46,6 +60,9 @@
                         visibility: visible;
                     }
                 }
+            }
+            @media (max-width: 580px) {
+                width: 100% !important;
             }
         }
         &-btn {
@@ -113,6 +130,10 @@
             }
         }
     }
+    @media (max-width: ($md4 + px)) {
+        top: -60px;
+        left: 0;
+    }
 }
 .slick-next {
     top: -100px;
@@ -135,5 +156,9 @@
                 display: block;
             }
         }
+    }
+    @media (max-width: ($md4 + px)) {
+        top: -60px;
+        left: 70px;
     }
 }
