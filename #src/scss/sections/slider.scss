@@ -5,9 +5,10 @@
         margin-right: 89px;
         border-left: 1px solid #000000;
         border-right: 1px solid #000000;
-        @media (max-width: ($md3 + px)) {
-            margin: 0;
-            border: none;
+        @media (max-width: ($md5 + px)) {
+            padding: 80px 20px 101px 20px;
+            margin-left: 53px;
+            margin-right: 52px;
         }
     }
     &__title {
@@ -25,6 +26,9 @@
             font-size: 28px;
             margin-bottom: 84px;
         }
+        @media (max-width: ($md5 + px)) {
+            font-size: 24px;
+        }
     }
     &__slick {
         margin-left: 100px;
@@ -39,15 +43,19 @@
                 object-fit: cover;
             }
         }
+        @media (max-width: ($md3 + px)) {
+            margin-left: -105px;
+        }
         @media (max-width: 790px) {
             margin-right: 127px;
         }
-        @media (max-width: ($md3 + px)) {
-            margin-left: 0;
-            //margin-right: 390px;
-        }
+
         @media (max-width: 580px) {
             margin-right: 0;
+        }
+        @media (max-width: ($md5 + px)) {
+            margin-left: -65px;
+            margin-right: -70px;
         }
         &-item {
             width: 335px !important;
@@ -86,15 +94,22 @@
         &-title {
             font-weight: 700;
             font-size: 20px;
-            line-height: 30px;
+            line-height: 30 / 20 * 100%;
             color: #26211e;
             text-transform: uppercase;
+            @media (max-width: ($md5 + px)) {
+                font-size: 18px;
+            }
         }
         &-text {
             font-size: 20px;
-            line-height: 30px;
+            line-height: 30 / 20 * 100%;
             color: #000000;
             margin-top: 18px;
+            font-weight: 300;
+            @media (max-width: ($md5 + px)) {
+                font-size: 16px;
+            }
         }
     }
 }
@@ -130,9 +145,15 @@
             }
         }
     }
+    @media (max-width: ($md3 + px)) {
+        left: 310px;
+    }
     @media (max-width: ($md4 + px)) {
         top: -60px;
-        left: 0;
+        left: 110px;
+    }
+    @media (max-width: ($md5 + px)) {
+        left: 70px;
     }
 }
 .slick-next {
@@ -157,8 +178,14 @@
             }
         }
     }
+    @media (max-width: ($md3 + px)) {
+        left: 390px;
+    }
     @media (max-width: ($md4 + px)) {
         top: -60px;
-        left: 70px;
+        left: 190px;
+    }
+    @media (max-width: ($md5 + px)) {
+        left: 150px;
     }
 }

@@ -9,12 +9,13 @@
         display: flex;
         gap: 71 / 1096 * 100%;
         @media (max-width: 1024px) {
-            flex-direction: column;
-            gap: 50px;
+            flex-direction: column-reverse;
+            gap: 34px;
         }
-        @media (max-width: ($md3 + px)) {
-            margin: 0;
-            border: none;
+        @media (max-width: ($md5 + px)) {
+            padding: 80px 0 80px 0;
+            margin-left: 53px;
+            margin-right: 52px;
         }
         &-block {
             width: 487 / 1096 * 100%;
@@ -41,7 +42,11 @@
                 font-size: 32px;
             }
             @media (max-width: ($md4 + px)) {
-                font-size: 20px;
+                font-size: 24px;
+            }
+            @media (max-width: ($md5 + px)) {
+                margin-bottom: 20px;
+                padding: 0 20px;
             }
         }
         &-text {

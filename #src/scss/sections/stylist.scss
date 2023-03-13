@@ -10,9 +10,10 @@
             max-width: 879px;
             margin: 0 auto;
         }
-        @media (max-width: ($md3 + px)) {
-            margin: 0;
-            border: none;
+        @media (max-width: ($md5 + px)) {
+            padding: 54px 18px 54px 18px;
+            margin-left: 53px;
+            margin-right: 52px;
         }
     }
     &__title {
@@ -28,6 +29,10 @@
         @media (max-width: ($md4 + px)) {
             font-size: 26px;
         }
+        @media (max-width: ($md5 + px)) {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
     }
     &__subtitle {
         font-weight: 700;
@@ -38,10 +43,15 @@
         margin-bottom: 71px;
         &-2 {
             color: #530709;
-            margin-bottom: 24px;
+            margin-bottom: 24px !important;
         }
         @media (max-width: ($md4 + px)) {
             font-size: 20px;
+        }
+        @media (max-width: ($md5 + px)) {
+            font-size: 16px;
+            margin-bottom: 46px;
+            font-weight: 500;
         }
     }
     &__list {
@@ -50,6 +60,10 @@
         flex-direction: column;
         gap: 56px;
         margin-bottom: 114px;
+        @media (max-width: ($md5 + px)) {
+            padding-left: 0;
+            margin-bottom: 54px;
+        }
         &-item {
             font-weight: 700;
             font-size: 24px;
@@ -59,13 +73,21 @@
             @media (max-width: ($md4 + px)) {
                 font-size: 20px;
             }
+            @media (max-width: ($md5 + px)) {
+                font-size: 18px;
+            }
             span {
                 display: block;
                 margin-top: 24px;
                 font-size: 20px;
-                line-height: 30px;
+                line-height: 30 / 20 * 100%;
                 color: #000000;
                 font-weight: 400;
+                @media (max-width: ($md5 + px)) {
+                    margin-top: 20px;
+                    font-weight: 300;
+                    font-size: 16px;
+                }
             }
             b {
                 position: relative;
@@ -102,9 +124,16 @@
         color: #26211e;
         &:not(:last-child) {
             margin-bottom: 24px;
+            @media (max-width: ($md4 + px)) {
+                margin-bottom: 20px;
+            }
         }
         @media (max-width: ($md4 + px)) {
             font-size: 20px;
+        }
+        @media (max-width: ($md5 + px)) {
+            font-weight: 500;
+            font-size: 16px;
         }
     }
 }

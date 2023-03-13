@@ -9,9 +9,10 @@
         border-left: 1px solid #000000;
         border-right: 1px solid #000000;
         position: relative;
-        @media (max-width: ($md3 + px)) {
-            margin: 0;
-            border: none;
+        @media (max-width: ($md5 + px)) {
+            padding: 119px 0 101px 0;
+            margin-left: 53px;
+            margin-right: 52px;
         }
     }
     &__title {
@@ -30,9 +31,13 @@
             width: 400px;
             background-color: white;
             position: absolute;
-            bottom: 0;
+            bottom: -24px;
             @media (max-width: ($md3 + px)) {
                 width: 250px;
+            }
+            @media (max-width: ($md5 + px)) {
+                width: 200px;
+                bottom: -20px;
             }
         }
         @media (max-width: ($md3 + px)) {
@@ -40,6 +45,10 @@
         }
         @media (max-width: ($md4 + px)) {
             font-size: 34px;
+        }
+        @media (max-width: ($md5 + px)) {
+            font-size: 28px;
+            margin-bottom: 41px;
         }
     }
     &__subtitle {
@@ -50,6 +59,9 @@
         @media (max-width: ($md3 + px)) {
             font-size: 28px;
         }
+        @media (max-width: ($md5 + px)) {
+            font-size: 18px;
+        }
     }
     &__socials {
         display: flex;
@@ -58,6 +70,10 @@
         position: absolute;
         bottom: 65px;
         right: -60px;
+        @media (max-width: ($md5 + px)) {
+            gap: 28px;
+            bottom: 22px;
+        }
         li {
             a {
                 &:before {
@@ -66,8 +82,8 @@
                 }
             }
         }
-        @media (max-width: ($md3 + px)) {
-            right: 20px;
+        @media (max-width: ($md5 + px)) {
+            right: -40px;
         }
     }
 }
