@@ -61,6 +61,11 @@
             @media (max-width: ($md4 + px)) {
                 font-size: 20px;
             }
+            @media (max-width: ($md5 + px)) {
+                font-size: 16px;
+                padding: 0 20px;
+                margin-bottom: 34px;
+            }
         }
         &-btn {
             padding: 20px 30px;
@@ -72,11 +77,9 @@
             line-height: 50 / 24 * 100%;
             text-transform: uppercase;
             display: block;
+            text-align: center;
             @media (max-width: ($md3 + px)) {
                 font-size: 20px;
-            }
-            @media (max-width: ($md4 + px)) {
-                font-size: 16px;
             }
         }
     }
