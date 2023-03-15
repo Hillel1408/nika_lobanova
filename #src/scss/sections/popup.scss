@@ -145,6 +145,9 @@
             @media (max-width: ($md4 + px)) {
                 font-size: 18px;
             }
+            @media (max-width: ($md5 + px)) {
+                gap: 20px;
+            }
         }
     }
     &__close {

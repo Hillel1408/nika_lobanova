@@ -196,12 +196,23 @@ body.lock {
 
 .header {
   background-color: #e3dedb;
+  border-bottom: 1px solid #000000;
 }
 
 .header__logo {
   position: absolute;
   top: 0;
   left: -20px;
+}
+
+@media (max-width: 390px) {
+  .header__logo {
+    -webkit-transform: scale(0.7);
+        -ms-transform: scale(0.7);
+            transform: scale(0.7);
+    left: -36px;
+    top: -10px;
+  }
 }
 
 .header__container {
@@ -220,6 +231,80 @@ body.lock {
           flex: 1 1 auto;
 }
 
+@media (max-width: 390px) {
+  .header__nav {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-left: 0;
+    padding: 0;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 53px;
+            flex: 0 0 53px;
+  }
+}
+
+.header__nav-icon {
+  display: none;
+}
+
+@media (max-width: 390px) {
+  .header__nav-icon {
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 18px;
+    cursor: pointer;
+    z-index: 5;
+    top: 34px;
+    right: 10px;
+  }
+  .header__nav-icon span {
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    top: calc(50% - 1px);
+    left: 0px;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #151e36;
+  }
+  .header__nav-icon span:first-child {
+    top: 0px;
+  }
+  .header__nav-icon span:last-child {
+    top: auto;
+    bottom: 0px;
+  }
+  .header__nav-icon.active {
+    right: 8px;
+  }
+  .header__nav-icon.active span {
+    -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+            transform: scale(0);
+  }
+  .header__nav-icon.active span:first-child {
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    top: calc(50% - 1px);
+    background-color: #530709;
+    height: 3px;
+    width: 24px;
+  }
+  .header__nav-icon.active span:last-child {
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+    bottom: calc(50% - 2px);
+    background-color: #530709;
+    height: 3px;
+    width: 24px;
+  }
+}
+
 .header__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -231,11 +316,55 @@ body.lock {
       flex-wrap: wrap;
 }
 
+@media (max-width: 390px) {
+  .header__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    width: 100%;
+    height: calc(100% - 90px);
+    top: 91px;
+    left: 0;
+    overflow: auto;
+    padding: 68px 94px 30px 94px;
+    background-color: #e3dedb;
+    z-index: 1;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .header__list.active {
+    opacity: 1;
+    visibility: visible;
+  }
+  .header__list:before, .header__list:after {
+    content: '';
+    display: block;
+    height: 100%;
+    top: 0;
+    border-left: 1px solid #000000;
+    position: absolute;
+    border-right: 1px solid #000000;
+  }
+  .header__list:before {
+    left: 15px;
+    width: 55px;
+  }
+  .header__list:after {
+    right: 15px;
+    width: 54px;
+  }
+}
+
 .header__list-link {
   font-weight: 500;
   font-size: 14px;
   display: inline-block;
-  line-height: 21px;
+  line-height: 150%;
   font-family: 'Montserrat', sans-serif;
   padding: 10px 32px;
   color: #26211e;
@@ -257,6 +386,14 @@ body.lock {
   }
 }
 
+@media (max-width: 390px) {
+  .header__list-link {
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 12px 0;
+  }
+}
+
 .header__language {
   min-width: 90px;
   border-left: 1px solid #000000;
@@ -267,6 +404,22 @@ body.lock {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+}
+
+@media (max-width: 390px) {
+  .header__language {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+    margin-left: 53px;
+    padding: 33px 0 36px 0;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .header__language > div {
@@ -282,6 +435,13 @@ body.lock {
       -ms-flex-align: center;
           align-items: center;
   padding-left: 20px;
+}
+
+@media (max-width: 390px) {
+  .header__language > div {
+    padding-left: 0;
+    margin-left: -22px;
+  }
 }
 
 .header__language > div:before {
@@ -312,10 +472,17 @@ body.lock {
   top: 25px;
   left: 20px;
   opacity: 0;
+  z-index: 1;
   visibility: hidden;
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+}
+
+@media (max-width: 390px) {
+  .header__tooltip {
+    left: 0;
+  }
 }
 
 .header__tooltip a {
@@ -482,6 +649,7 @@ body.lock {
 
 .about {
   background-color: #e3dedb;
+  border-bottom: 1px solid #000000;
 }
 
 .about__content {
@@ -546,6 +714,10 @@ body.lock {
   }
 }
 
+.nika {
+  border-bottom: 1px solid #000000;
+}
+
 .nika__content {
   padding: 120px 20px 120px 20px;
   margin-left: 90px;
@@ -593,6 +765,7 @@ body.lock {
 
 .stylist {
   background-color: #e3dedb;
+  border-bottom: 1px solid #000000;
 }
 
 .stylist__content {
@@ -788,6 +961,10 @@ body.lock {
   }
 }
 
+.slider {
+  border-bottom: 1px solid #000000;
+}
+
 .slider__content {
   padding: 120px 20px 150px 20px;
   margin-left: 90px;
@@ -830,6 +1007,7 @@ body.lock {
 @media (max-width: 390px) {
   .slider__title {
     font-size: 24px;
+    margin-bottom: 0;
   }
 }
 
@@ -873,6 +1051,8 @@ body.lock {
   .slider__slick {
     margin-left: -65px;
     margin-right: -70px;
+    padding-top: 87px;
+    overflow: hidden;
   }
 }
 
@@ -1003,6 +1183,7 @@ body.lock {
 @media (max-width: 390px) {
   .slick-prev {
     left: 70px;
+    top: 20px;
   }
 }
 
@@ -1053,11 +1234,13 @@ body.lock {
 @media (max-width: 390px) {
   .slick-next {
     left: 150px;
+    top: 20px;
   }
 }
 
 .order {
   background: #e3dedb;
+  border-bottom: 1px solid #000000;
 }
 
 .order__content {
@@ -1411,6 +1594,12 @@ body.lock {
 @media (max-width: 575.98px) {
   .popup__content-text {
     font-size: 18px;
+  }
+}
+
+@media (max-width: 390px) {
+  .popup__content-text {
+    gap: 20px;
   }
 }
 

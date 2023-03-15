@@ -281,3 +281,22 @@ popupClose.addEventListener('click', () => {
     popup.classList.toggle('open');
     document.body.classList.toggle('lock');
 });
+
+const menu = document.querySelector('.header__list');
+const button = document.querySelector('.header__nav-icon');
+const body = document.querySelector('.body');
+
+button.onclick = function () {
+    menu.classList.toggle('active');
+    button.classList.toggle('active');
+    body.classList.toggle('lock');
+};
+
+const headerNavLinks = document.querySelectorAll('.header__list-link');
+headerNavLinks.forEach((item) => {
+    item.addEventListener('click', () => {
+        button.classList.toggle('active');
+        menu.classList.toggle('active');
+        body.classList.remove('lock');
+    });
+});
