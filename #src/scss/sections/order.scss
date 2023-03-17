@@ -82,6 +82,10 @@
             @media (max-width: ($md3 + px)) {
                 font-size: 20px;
             }
+            @media (max-width: 380px) {
+                padding: 20px 10px;
+                font-size: 18px;
+            }
         }
     }
 }
