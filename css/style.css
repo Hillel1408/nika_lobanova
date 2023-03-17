@@ -1372,6 +1372,13 @@ body.lock {
   }
 }
 
+@media (max-width: 380px) {
+  .order__content-btn {
+    padding: 20px 10px;
+    font-size: 18px;
+  }
+}
+
 .popup {
   position: fixed;
   width: 100%;

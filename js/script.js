@@ -290,6 +290,10 @@ button.onclick = function () {
     menu.classList.toggle('active');
     button.classList.toggle('active');
     body.classList.toggle('lock');
+    const bodyScrollTop =
+        document.documentElement.scrollTop || document.body.scrollTop;
+    console.log(bodyScrollTop);
+    menu.style.top = `${91 - bodyScrollTop}px`;
 };
 
 const headerNavLinks = document.querySelectorAll('.header__list-link');
