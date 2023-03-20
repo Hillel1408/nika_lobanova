@@ -103,6 +103,7 @@
             line-height: 30 / 20 * 100%;
             color: #26211e;
             text-transform: uppercase;
+            cursor: pointer;
             @media (max-width: ($md5 + px)) {
                 font-size: 18px;
             }

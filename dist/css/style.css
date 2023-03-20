@@ -1119,6 +1119,7 @@ body.lock {
   line-height: 150%;
   color: #26211e;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 @media (max-width: 420px) {
