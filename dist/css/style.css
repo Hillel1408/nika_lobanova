@@ -181,6 +181,7 @@ body {
   margin: 0 auto;
   border-left: 1px solid #000000;
   border-right: 1px solid #000000;
+  border-color: transparent;
 }
 
 @media (max-width: 1350px) {
@@ -197,6 +198,7 @@ body.lock {
 .header {
   background-color: #e3dedb;
   border-bottom: 1px solid #000000;
+  border-color: transparent;
 }
 
 .header__logo {
@@ -229,6 +231,7 @@ body.lock {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
+  border-color: transparent;
 }
 
 @media (max-width: 420px) {
@@ -398,6 +401,7 @@ body.lock {
 .header__language {
   min-width: 90px;
   border-left: 1px solid #000000;
+  border-color: transparent;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -529,6 +533,7 @@ body.lock {
   margin-right: 89px;
   border-left: 1px solid #000000;
   border-right: 1px solid #000000;
+  border-color: transparent;
   position: relative;
 }
 
@@ -651,6 +656,7 @@ body.lock {
 .about {
   background-color: #e3dedb;
   border-bottom: 1px solid #000000;
+  border-color: transparent;
 }
 
 .about__content {
@@ -658,6 +664,7 @@ body.lock {
   margin: 0 89px 0 90px;
   border-left: 1px solid #000000;
   border-right: 1px solid #000000;
+  border-color: transparent;
 }
 
 .about__content-wrap {
@@ -717,6 +724,7 @@ body.lock {
 
 .nika {
   border-bottom: 1px solid #000000;
+  border-color: transparent;
 }
 
 .nika__content {
@@ -725,6 +733,7 @@ body.lock {
   margin-right: 89px;
   border-left: 1px solid #000000;
   border-right: 1px solid #000000;
+  border-color: transparent;
 }
 
 @media (max-width: 420px) {
@@ -767,6 +776,7 @@ body.lock {
 .stylist {
   background-color: #e3dedb;
   border-bottom: 1px solid #000000;
+  border-color: transparent;
 }
 
 .stylist__content {
@@ -775,6 +785,7 @@ body.lock {
   margin-right: 89px;
   border-left: 1px solid #000000;
   border-right: 1px solid #000000;
+  border-color: transparent;
 }
 
 .stylist__content-wrap {
@@ -964,6 +975,7 @@ body.lock {
 
 .slider {
   border-bottom: 1px solid #000000;
+  border-color: transparent;
 }
 
 .slider__content {
@@ -972,6 +984,7 @@ body.lock {
   margin-right: 89px;
   border-left: 1px solid #000000;
   border-right: 1px solid #000000;
+  border-color: transparent;
 }
 
 @media (max-width: 420px) {
@@ -1242,6 +1255,7 @@ body.lock {
 .order {
   background: #e3dedb;
   border-bottom: 1px solid #000000;
+  border-color: transparent;
 }
 
 .order__content {
@@ -1250,6 +1264,7 @@ body.lock {
   margin-right: 89px;
   border-left: 1px solid #000000;
   border-right: 1px solid #000000;
+  border-color: transparent;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

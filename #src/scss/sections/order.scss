@@ -1,12 +1,14 @@
 .order {
     background: #e3dedb;
     border-bottom: 1px solid #000000;
+    border-color: transparent;
     &__content {
         padding: 100px 20px 104px 20px;
         margin-left: 90px;
         margin-right: 89px;
         border-left: 1px solid #000000;
         border-right: 1px solid #000000;
+        border-color: transparent;
         display: flex;
         gap: 71 / 1096 * 100%;
         @media (max-width: 1024px) {

@@ -34,6 +34,7 @@ $(document).ready(function () {
 });
 
 const sliderBtn = document.querySelectorAll('.slider__slick-btn');
+const sliderTitle = document.querySelectorAll('.slider__slick-title');
 const popup = document.querySelector('.popup');
 const popupClose = document.querySelector('.popup__close');
 const popupText = document.querySelector('.popup__content-text');
@@ -147,7 +148,7 @@ const price = [
     'price: 180 USD',
     'Price: 260 USD',
     'Price: 1250 USD instead of 1450 USD',
-    'Стоимость: 4500 грн',
+    'Price: 120 USD',
     'Стоимость: 6500 грн',
     'Стоимость: 6500 грн',
     'Стоимость: 9500 грн',
@@ -256,24 +257,34 @@ const img = [
     `,
 ];
 
+const func = (e) => {
+    const index = e.target.dataset.id;
+
+    popupText.innerHTML = '';
+    popupText.innerHTML = text[index];
+
+    priceBlock.innerHTML = '';
+    priceBlock.innerHTML = price[index];
+
+    modalTitle.innerHTML = '';
+    modalTitle.innerHTML = title[index];
+
+    modalImg.innerHTML = '';
+    modalImg.innerHTML = img[index];
+
+    popup.classList.toggle('open');
+    document.body.classList.toggle('lock');
+};
+
 sliderBtn.forEach((item) => {
     item.addEventListener('click', (e) => {
-        const index = e.target.dataset.id;
+        func(e);
+    });
+});
 
-        popupText.innerHTML = '';
-        popupText.innerHTML = text[index];
-
-        priceBlock.innerHTML = '';
-        priceBlock.innerHTML = price[index];
-
-        modalTitle.innerHTML = '';
-        modalTitle.innerHTML = title[index];
-
-        modalImg.innerHTML = '';
-        modalImg.innerHTML = img[index];
-
-        popup.classList.toggle('open');
-        document.body.classList.toggle('lock');
+sliderTitle.forEach((item) => {
+    item.addEventListener('click', (e) => {
+        func(e);
     });
 });
 

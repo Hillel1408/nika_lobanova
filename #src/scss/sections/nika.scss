@@ -1,11 +1,13 @@
 .nika {
     border-bottom: 1px solid #000000;
+    border-color: transparent;
     &__content {
         padding: 120px 20px 120px 20px;
         margin-left: 90px;
         margin-right: 89px;
         border-left: 1px solid #000000;
         border-right: 1px solid #000000;
+        border-color: transparent;
         @media (max-width: ($md5 + px)) {
             padding: 80px 20px 80px 20px;
             margin-left: 53px;

@@ -1,6 +1,7 @@
 .header {
     background-color: #e3dedb;
     border-bottom: 1px solid #000000;
+    border-color: transparent;
     &__logo {
         position: absolute;
         top: 0;
@@ -20,6 +21,7 @@
         border-left: 1px solid #000000;
         padding: 26px 0;
         flex: 1 1 auto;
+        border-color: transparent;
         @media (max-width: ($md5 + px)) {
             order: 1;
             margin-left: 0;
@@ -146,6 +148,7 @@
     &__language {
         min-width: 90px;
         border-left: 1px solid #000000;
+        border-color: transparent;
         display: flex;
         align-items: center;
         position: relative;
