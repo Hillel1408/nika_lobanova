@@ -2,16 +2,18 @@
     border-bottom: 1px solid #000000;
     border-color: transparent;
     &__content {
-        padding: 120px 20px 150px 20px;
-        margin-left: 90px;
-        margin-right: 89px;
+        padding: 120px 0 150px 0;
+        //margin-left: 90px;
+        //margin-right: 89px;
         border-left: 1px solid #000000;
         border-right: 1px solid #000000;
         border-color: transparent;
+        max-width: 1092px;
+        margin: 0 auto;
         @media (max-width: ($md5 + px)) {
-            padding: 80px 20px 101px 20px;
-            margin-left: 53px;
-            margin-right: 52px;
+            padding: 80px 0 101px 0;
+            //margin-left: 53px;
+            //margin-right: 52px;
         }
     }
     &__title {
@@ -35,7 +37,7 @@
         }
     }
     &__slick {
-        margin-left: 100px;
+        //margin-left: 100px;
         position: relative;
         &-img {
             width: 100%;
@@ -48,18 +50,17 @@
             }
         }
         @media (max-width: ($md3 + px)) {
-            margin-left: -105px;
+            //margin-left: -105px;
         }
         @media (max-width: 790px) {
-            margin-right: 127px;
+            //margin-right: 127px;
         }
-
         @media (max-width: 580px) {
-            margin-right: 0;
+            //margin-right: 0;
         }
         @media (max-width: ($md5 + px)) {
-            margin-left: -65px;
-            margin-right: -70px;
+            //margin-left: -65px;
+            //margin-right: -70px;
             padding-top: 87px;
             overflow: hidden;
         }
@@ -112,7 +113,7 @@
             font-size: 20px;
             line-height: 30 / 20 * 100%;
             color: #000000;
-            margin-top: 18px;
+            margin-top: 8px;
             font-weight: 300;
             @media (max-width: ($md5 + px)) {
                 font-size: 16px;
@@ -133,7 +134,7 @@
 }
 .slick-prev {
     top: -100px;
-    left: 220px;
+    left: 320px;
     &::before {
         content: url('../img/arrow.png');
     }
@@ -160,13 +161,13 @@
         left: 110px;
     }
     @media (max-width: ($md5 + px)) {
-        left: 70px;
+        left: 0px;
         top: 20px;
     }
 }
 .slick-next {
     top: -100px;
-    left: 300px;
+    left: 400px;
     &::before {
         content: url('../img/arrow.png');
     }
@@ -194,7 +195,7 @@
         left: 190px;
     }
     @media (max-width: ($md5 + px)) {
-        left: 150px;
+        left: 70px;
         top: 20px;
     }
 }

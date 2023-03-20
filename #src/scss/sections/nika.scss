@@ -3,21 +3,21 @@
     border-color: transparent;
     &__content {
         padding: 120px 20px 120px 20px;
-        margin-left: 90px;
-        margin-right: 89px;
+        //margin-left: 90px;
+        //margin-right: 89px;
         border-left: 1px solid #000000;
         border-right: 1px solid #000000;
         border-color: transparent;
         @media (max-width: ($md5 + px)) {
             padding: 80px 20px 80px 20px;
-            margin-left: 53px;
-            margin-right: 52px;
+            //margin-left: 53px;
+            //margin-right: 52px;
         }
     }
     &__images {
         display: flex;
         gap: 20 / 874 * 100%;
-        max-width: 874px;
+        max-width: 1092px;
         margin: 0 auto;
         img {
             width: 427 / 874 * 100%;

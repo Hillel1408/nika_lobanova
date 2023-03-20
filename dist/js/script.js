@@ -6,18 +6,6 @@ $(document).ready(function () {
         infinite: false,
         responsive: [
             {
-                breakpoint: 1030,
-                settings: {
-                    slidesToShow: 2,
-                },
-            },
-            {
-                breakpoint: 790,
-                settings: {
-                    slidesToShow: 1,
-                },
-            },
-            {
                 breakpoint: 767.98,
                 settings: {
                     slidesToShow: 2,
@@ -303,7 +291,7 @@ button.onclick = function () {
     body.classList.toggle('lock');
     const bodyScrollTop =
         document.documentElement.scrollTop || document.body.scrollTop;
-    menu.style.top = `${91 - bodyScrollTop}px`;
+    menu.style.top = `${90 - bodyScrollTop}px`;
 };
 
 const headerNavLinks = document.querySelectorAll('.header__list-link');

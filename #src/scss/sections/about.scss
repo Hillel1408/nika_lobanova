@@ -4,18 +4,18 @@
     border-color: transparent;
     &__content {
         padding: 120px 20px 167px 20px;
-        margin: 0 89px 0 90px;
+        //margin: 0 89px 0 90px;
         border-left: 1px solid #000000;
         border-right: 1px solid #000000;
         border-color: transparent;
         &-wrap {
-            max-width: 696px;
+            max-width: 1092px;
             margin: 0 auto;
         }
         @media (max-width: ($md5 + px)) {
             padding: 54px 20px 54px 20px;
-            margin-left: 53px;
-            margin-right: 52px;
+            //margin-left: 53px;
+            //margin-right: 52px;
         }
     }
     &__title {

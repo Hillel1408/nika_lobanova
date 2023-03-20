@@ -2,18 +2,29 @@
     background-image: url('../img/bg.jpg');
     background-size: cover;
     background-position: center;
+    &__logo {
+        display: block;
+        margin: 0 auto 33px auto;
+        @media (max-width: ($md3 + px)) {
+            width: 171px;
+        }
+        @media (max-width: ($md5 + px)) {
+            width: 71px;
+            margin: 0 auto 4px auto;
+        }
+    }
     &__content {
         padding: 400px 20px 315px 20px;
-        margin-left: 90px;
-        margin-right: 89px;
+        //margin-left: 90px;
+        //margin-right: 89px;
         border-left: 1px solid #000000;
         border-right: 1px solid #000000;
         border-color: transparent;
         position: relative;
         @media (max-width: ($md5 + px)) {
             padding: 119px 0 101px 0;
-            margin-left: 53px;
-            margin-right: 52px;
+            //margin-left: 53px;
+            //margin-right: 52px;
         }
     }
     &__title {
@@ -70,7 +81,7 @@
         gap: 65px;
         position: absolute;
         bottom: 65px;
-        right: -60px;
+        right: 60px;
         @media (max-width: ($md5 + px)) {
             gap: 28px;
             bottom: 22px;
@@ -84,7 +95,7 @@
             }
         }
         @media (max-width: ($md5 + px)) {
-            right: -40px;
+            right: 0px;
         }
     }
 }
