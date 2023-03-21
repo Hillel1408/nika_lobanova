@@ -292,6 +292,7 @@ button.onclick = function () {
     const bodyScrollTop =
         document.documentElement.scrollTop || document.body.scrollTop;
     menu.style.top = `${90 - bodyScrollTop}px`;
+    menu.style.height = `${window.innerHeight - bodyScrollTop}px`;
 };
 
 const headerNavLinks = document.querySelectorAll('.header__list-link');

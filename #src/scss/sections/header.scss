@@ -4,12 +4,13 @@
     border-color: transparent;
     &__logo {
         position: absolute;
-        top: 0;
-        left: -20px;
+        top: 15px;
+        width: 72px;
+        left: 0;
         @media (max-width: ($md5 + px)) {
-            transform: scale(0.7);
-            left: -36px;
-            top: -10px;
+            width: 64px;
+            left: 0;
+            top: 15px;
         }
     }
     &__container {
